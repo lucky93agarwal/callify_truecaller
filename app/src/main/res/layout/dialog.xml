@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/architectsdaughter_regular"
+        android:text="@string/kaun_string"
+        android:letterSpacing="0.11"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/newbackgrond"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40"
+            android:background="@drawable/bluebackground"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.26"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lineartext"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circledrawablenew"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/firsttexttv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="L"
+                            android:textAllCaps="true"
+                            android:textColor="#55A655"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/contactPhoto"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/manicon"
+                        android:visibility="gone"
+                        app:civ_border_color="#ffffff"
+                        app:civ_border_width="1dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.62"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/firstsimiconnew" />
+
+                        <TextView
+                            android:id="@+id/Cname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/montserratmedium"
+                            android:padding="0dp"
+                            android:text="Missed call less then 1 minutes ago"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:id="@+id/Cnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="Lucky Agarwal"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/imagetag"
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/tag" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/spamlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:id="@+id/spam_count_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/montserratmedium"
+                            android:padding="0dp"
+                            android:text="3023"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/montserratmedium"
+                            android:padding="0dp"
+                            android:text="Spam reports"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.10"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dialog_ok"
+                        android:layout_width="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="?android:selectableItemBackground"
+                        android:layout_height="20dp"
+                        android:src="@drawable/cancelicon" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/numbercalltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="7318240188 - Airtel"
+                    android:textColor="#5C5C65"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="Uttar Pradesh East, India"
+                    android:textColor="#908F9D"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/viewbtn"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbgnew"
+
+                    android:gravity="center"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30"
+            android:background="@drawable/whitebg"
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/callll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/calliv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:rotation="270"
+                    android:src="@drawable/onephone" />
+
+                <TextView
+                    android:id="@+id/calltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="CALL"
+                    android:textColor="#2d3133"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/messagell"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/messageiv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/onechat" />
+
+                <TextView
+                    android:id="@+id/messagetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="MESSAGE"
+                    android:textColor="#2d3133"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/savell"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/saveiv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/onesave" />
+
+                <TextView
+                    android:id="@+id/savetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="SAVE"
+                    android:textColor="#2d3133"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blackbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/blackiv"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/oneblock" />
+
+                <TextView
+                    android:id="@+id/blacktv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="BLACK"
+                    android:textColor="#2d3133"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/newlinearpopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="3dp">
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Refresh Ad"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="55dp"
+                        android:id="@+id/btn_refersh"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

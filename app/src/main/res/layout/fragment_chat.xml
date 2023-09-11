@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            app:tabIconTint="#ffffff"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="#ffffff"
+            android:background="#3B8AFD"
+            app:tabTextColor="#C8C4C4"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="3dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabInlineLabel="true"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            android:layout_height="wrap_content"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/miniFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#edf5f7"
+        app:fabSize="mini"
+        android:src="@drawable/ic_action_edit"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="88dp"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="#3B8AFD"
+        android:layout_margin="16dp"
+        app:tint="#ffffff"
+        android:background="#3B8AFD"
+        android:src="@drawable/ic_message"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

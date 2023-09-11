@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Callify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="kaun_string">Callify</string>
+
+    <string name="get_started_string">COMMENCER</string>
+
+
+    <string name="smart__string">Intelligente,</string>
+
+    <string name="spam_free_dialer_string">numéroteur sans spam</string>
+    <string name="and_sms_string">et SMS</string>
+    <string name="truecaller__loved_by_250_million_users_string">Callify, Identification de l\'appelant à la croissance la plus rapide</string>
+    <string name="by_clicking__get_started__if_you_reside_in_the_eu__eea_or_switzerland_you_accept_the_terms_of_service_and_if_you_reside_in_any_other_country_you_accept_the_terms_of_service_and_privacy_policy_string">En cliquant sur Commencer si vous résidez dans l\'UE, l\'EEE ou la Suisse, vous acceptez les conditions d\'utilisation et si vous résidez dans un autre pays, vous acceptez les conditions d\'utilisation et la politique de confidentialité.</string>
+    <string name="change_language_to__string">Changer la langue en</string>
+    <string name="hindi"><u>हिन्दी</u>.</string>
+    <string name="more_string"><u>Plus</u>.</string>
+
+    <string name="get_started_ek1_string">COMMENCER</string>
+    <string name="choose_language">Choisissez la langue</string>
+
+
+
+    <string name="use_system_default">Utiliser la valeur par défaut du système</string>
+    <string name="change">Changement</string>
+    <string name="defaulttitle">Définir Truecaller comme application de numérotation par défaut?</string>
+    <string name="defaultdetail">La modification de l\'application de numérotation par défaut peut rendre certains paramètres d\'appel invalides et peut également affecter la stabilité et la compatibilité du téléphone. L\'utilisation de l\'application de numérotation fournie par le système est recommandée.</string>
+    <string name="to_show_your">Pour afficher votre historique d\'appels et pour filtrer les spams, kaun a besoin d\'accéder à vos appels, contacts et SMS.</string>
+    <string name="security_note_kaun">(Note de sécurité: Kaun ne tire pas ses données des contacts de votre répertoire)</string>
+
+    <string name="continuebtn">CONTINUER</string>
+
+
+    <string name="enter_phone_number">Entrez le numéro de téléphone</string>
+    <string name="select_your_country_and_enter_your_phone_number">Sélectionnez votre pays et entrez votre numéro de téléphone</string>
+
+
+    <string name="upgrade_to_premium">Passer à la version premium</string>
+    <string name="who_viewed_my_profile">Qui a visionné mon profil</string>
+    <string name="notifications">Notifications</string>
+    <string name="manage_blocking">Gérer le blocage</string>
+    <string name="discovery_new_friends">Découverte de nouveaux amis</string>
+    <string name="invite_friends">Inviter des amis</string>
+    <string name="dark_mode">Mode sombre</string>
+    <string name="settings">Réglages</string>
+    <string name="send_feedback">Envoyer des commentaires</string>
+    <string name="faq">FAQ</string>
+
+
+
+
+
+
+    <string name="change_default_sms_app">Modifier l\'application SMS par défaut</string>
+    <string name="mark_all_as_read">tout marquer comme lu</string>
+    <string name="arcived_conversations">Conversations archivées</string>
+
+
+    <string name="enter_your_fist_name">Entrez votre nom de poing</string>
+    <string name="enter_your_last_name">Entrez votre nom</string>
+    <string name="enter_your_email">Entrer votre Email</string>
+
+
+
+    <string name="home">Accueil</string>
+    <string name="contact">Contact</string>
+    <string name="premium">Prime</string>
+    <string name="chat">Bavarder</string>
+
+
+</resources>

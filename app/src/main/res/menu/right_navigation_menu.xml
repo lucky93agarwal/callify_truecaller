@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_more_vert_24">
+        <menu>
+            <item
+                android:id="@+id/change_default_sms_app"
+                android:icon="@drawable/chatone"
+                android:title="@string/change_default_sms_app"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/mark_all_as_read"
+                android:icon="@drawable/mark"
+                android:title="@string/mark_all_as_read"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/ic_books"
+                android:icon="@drawable/archived"
+                android:title="@string/arcived_conversations"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/ic_center_focus"
+                android:icon="@drawable/setting"
+                android:title="@string/settings"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+
+</menu>

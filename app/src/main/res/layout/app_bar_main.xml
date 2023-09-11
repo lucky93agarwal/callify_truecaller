@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:alpha="10"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                app:titleTextColor="@color/white"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="#FFFFFF"
+
+                    android:layout_weight="0.07">
+                    <TextView
+                        android:id="@+id/tvone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="#908F9D"
+                        android:fontFamily="@font/montserratmedium"
+                        android:text="Search numbers, names &amp; more"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="5dp"/>
+                    <ImageView
+                        android:id="@+id/walletiv"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:visibility="gone"
+                        android:src="@drawable/walleticon"/>
+                    <TextView
+                        android:id="@+id/wallettv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:visibility="gone"
+                        android:text="100"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="18dp" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/cartviewiv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/cart"/>
+                        <TextView
+                            android:id="@+id/totalproduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="9dp"
+                            android:layout_alignRight="@+id/cartviewiv"
+                            android:layout_alignParentTop="true"
+                            android:padding="5dp"
+                            android:background="@drawable/radcircle"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <include layout="@layout/activity_main_home" />
+
+</LinearLayout>

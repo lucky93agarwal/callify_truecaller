@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/video_call_item"
+        android:icon="@drawable/ic_videocam"
+        android:visible="false"
+        android:title="Video Call"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/voice_call_item"
+        android:icon="@drawable/ic_phone_white"
+        android:title="Voice Call"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/view_contact_menu_item"
+        android:title="View Contact"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/block_contact"
+        android:title="Block Contact"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search_item"
+        android:icon="@drawable/ic_search"
+        android:visible="false"
+        android:title="@string/search_hint"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/add_to_contacts"
+        android:visible="false"
+        android:title="Add to Contacts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/clear_chat_item"
+        android:title="Clear chat"
+        android:visible="false"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/mute_item"
+        android:visible="false"
+        android:title="Mute Notifications"
+        app:showAsAction="never" />
+
+</menu>

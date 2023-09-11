@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/kaun10decnew"
+    android:orientation="vertical"
+    tools:context=".language.LanguageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.15"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/architectsdaughter_regular"
+            android:text="@string/kaun_string"
+            android:letterSpacing="0.11"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="0.55"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.68"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratblack"
+                android:text="@string/smart__string"
+                android:textColor="#FFFFFF"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratblack"
+                android:text="@string/spam_free_dialer_string"
+                android:textColor="#FFFFFF"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratblack"
+                android:text="@string/and_sms_string"
+                android:textColor="#FFFFFF"
+                android:textSize="38dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="@string/truecaller__loved_by_250_million_users_string"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="3dp"
+                    android:background="@drawable/whitebackground"
+                    android:src="@drawable/lang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="@string/change_language_to__string"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/hinditv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="@string/hindi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="."
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/moretv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="@string/more_string"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.32"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llbutttonll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnbnack"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvbutttontv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="@string/get_started_ek1_string"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="@string/by_clicking__get_started__if_you_reside_in_the_eu__eea_or_switzerland_you_accept_the_terms_of_service_and_if_you_reside_in_any_other_country_you_accept_the_terms_of_service_and_privacy_policy_string"
+                android:textColor="#FFFFFF"
+                android:textSize="08dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

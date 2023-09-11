@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_navigation_icon_size" tools:override="true">40dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">0dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="img_width">250dp</dimen>
+    <dimen name="img_height">250dp</dimen>
+    <dimen name="margin_top_message">8dp</dimen>
+    <dimen name="margin_bottom_message">8dp</dimen>
+    <dimen name="r_audio_width">275dp</dimen>
+    .
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerViewone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/llllone"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/circular_progress_bar"
+            android:indeterminateTint="#007AFF"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+        <LinearLayout
+            android:id="@+id/llseven"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circledrawable"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/manmanimage"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/profile" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llone"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/firsttexttv"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/circular_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                android:visibility="visible"
+                tools:text="DL" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="Profile Icon"
+        android:src="@drawable/profile_picture"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/llllone"
+        android:fontFamily="@font/montserratmedium"
+        android:maxLength="30"
+        android:text="NAME"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#2D3133"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textViewName"
+        android:background="@drawable/calliynamebg"
+        android:fontFamily="@font/architectsdaughter_regular"
+        android:gravity="center_horizontal"
+        android:text="Callify"
+        android:textColor="#3B8AFD"
+        android:textSize="09sp" />
+
+    <TextView
+        android:id="@+id/textViewCallNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/textViewName"
+        android:layout_toEndOf="@id/llllone"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/llllone"
+        android:contentDescription="Call Log Icon"
+        android:paddingRight="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/imagesdfView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/simicon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:contentDescription="Call Log Icon"
+            android:src="@drawable/simicon" />
+
+
+        <TextView
+            android:id="@+id/simtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewCallDatess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_toEndOf="@id/imagesdfView"
+        android:text="date"
+        android:textColor="#908F9D"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/textViewCallDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_toEndOf="@id/textViewCallDatess"
+        android:text=""
+        android:textColor="#908F9D"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/textViewCallDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:text="300"
+        android:textColor="#908F9D"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewCallDuration"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phoneiv"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/textViewCallDuration"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:rotation="270"
+            android:src="@drawable/onephone" />
+
+        <ImageView
+            android:id="@+id/phonechativ"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/textViewCallDuration"
+            android:layout_alignLeft="@+id/phoneiv"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/onechat" />
+    </LinearLayout>
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_above="@id/textViewCallDuration"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:contentDescription="Call Log Icon"-->
+    <!--            android:paddingRight="15dp" />-->
+</RelativeLayout>

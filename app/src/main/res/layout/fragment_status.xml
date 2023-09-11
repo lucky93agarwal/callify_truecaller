@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fafafa"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/chat_row_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    />
+                <com.devlomi.circularstatusview.CircularStatusView
+                    android:id="@+id/circular_status_view"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:portion_color="@color/blue"
+                    app:portion_spacing="4dp"
+                    app:portion_width="4dp"
+                    app:portions_count="8" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/plusbtnbtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/blueplus"
+                    android:layout_alignEnd="@id/profile_image"
+                    android:layout_alignBottom="@id/profile_image"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_toEndOf="@id/relativelayout"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:text="My Status"
+                android:textStyle="bold"
+                android:textColor="#202020"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_toEndOf="@id/relativelayout"
+                android:text="Tap to add status updatee"
+                android:ellipsize="end"
+                android:layout_marginEnd="6dp"
+                android:textColor="#737373"
+                android:maxLines="1"
+                android:layout_marginTop="1dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:background="#ebebeb"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebebeb"
+            android:textColor="#202020"
+            android:text="Most popular"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvlatestStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebebeb"
+            android:textColor="#202020"
+            android:text="Recent updates"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

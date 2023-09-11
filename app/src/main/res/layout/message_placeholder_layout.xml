@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerViewone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/llllone"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/view_circle"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="Profile Icon"
+        android:src="@drawable/profile_picture"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/llllone"
+        android:background="#dddddd" />
+
+
+
+    <TextView
+        android:id="@+id/textViewCallNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/textViewName"
+        android:layout_toEndOf="@id/llllone"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/llllone"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="15dp"
+
+            android:background="#dddddd" />
+
+        <View
+            android:id="@+id/imgeView"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:background="#dddddd" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textViewCallDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCallNumber"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:text="300"
+        android:textColor="#908F9D"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@id/textViewCallDuration"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/phoneiv"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/textViewCallDuration"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="#dddddd" />
+
+        <View
+            android:id="@+id/phonechativ"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_above="@id/textViewCallDuration"
+            android:layout_alignLeft="@+id/phoneiv"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="#dddddd" />
+
+    </LinearLayout>
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:layout_above="@id/textViewCallDuration"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:contentDescription="Call Log Icon"-->
+    <!--            android:paddingRight="15dp" />-->
+</RelativeLayout>

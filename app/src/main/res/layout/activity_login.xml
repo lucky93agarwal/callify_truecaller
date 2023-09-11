@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/fill_265"
+            android:padding="46dp"
+            android:src="@drawable/download__5_"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Your Profile"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#322775"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <RelativeLayout
+                android:id="@+id/relatfacebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imagefacebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/download__7_"/>
+
+                <TextView
+                    android:id="@+id/textviewfacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Facebook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#322775"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <RelativeLayout
+                android:id="@+id/relatgoogle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imagegoogle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/_255"/>
+                <TextView
+                    android:id="@+id/googletv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Google"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/llmenual"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <RelativeLayout
+                android:id="@+id/rlmenual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ivmenual"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/download__8_"/>
+                <TextView
+                    android:id="@+id/tvmenual"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Type name manually"
+                    android:textAllCaps="true"
+                    android:textSize="16dp"
+                    android:textColor="#908F9D"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Login.LoginSecActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="25dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#007AFF"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:id="@+id/ivcamera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cameraivnew" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/profilenew" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:textColorHint="#888888"
+                    android:hint="@string/enter_your_fist_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/etfname"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:textSize="14dp"-->
+<!--                android:hint="@string/enter_your_fist_name"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="#888888" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/profilenew" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/newdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etsname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:textColorHint="#888888"
+                        android:hint="@string/enter_your_last_name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                <EditText-->
+<!--                    -->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:hint="@string/enter_your_last_name"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="#888888" />-->
+
+                <ImageView
+                    android:id="@+id/greencheckivs"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@+id/newdata"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/greencheck" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/messagenew" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/newdatanewdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:textColorHint="#888888"
+                        android:hint="@string/enter_your_email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                <EditText-->
+<!--                -->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:hint="@string/enter_your_email"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:minLines="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="#888888" />-->
+
+                <ImageView
+                    android:id="@+id/greencheckiv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@+id/newdatanewdata"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/greencheck" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicatorColor="#322775"
+        app:indicatorName="BallPulseIndicator" />
+
+    <LinearLayout
+        android:id="@+id/llcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.08"
+        android:background="#A6B2BF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:text="@string/continuebtn"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

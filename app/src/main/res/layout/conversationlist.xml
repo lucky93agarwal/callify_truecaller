@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009-2015 Felix Bechstein -->
+<!--
+		This file is part of SMSdroid. This program is free software; you can
+		redistribute it and/or modify it under the terms of the GNU General
+		Public License as published by the Free Software Foundation; either
+		version 3 of the License, or (at your option) any later version.
+-->
+<!--
+		This program is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details. You should have received a
+		copy of the GNU General Public License along with this program; If
+		not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearhide"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@drawable/rowbackgroundraw">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_weight="0.4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5">
+                <TextView
+                    android:id="@+id/counttv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="11 unread"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#908F9D"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="conversations"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="#908F9D"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/showtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOW"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#322775"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.4">
+            <TextView
+                android:id="@+id/hidetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARK AS READ"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#322775"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:scrollingCache="true"/>
+</LinearLayout>

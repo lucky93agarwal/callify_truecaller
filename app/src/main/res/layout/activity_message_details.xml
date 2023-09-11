@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.gpslab.kaun.mssagedetail.MessageDataModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".mssagedetail.MessageDetailsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivback"
+                    android:layout_width="30dp"
+                    android:onClick="@{() -> user.handleclick()}"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:whatevr="@{user.imageUrl}"
+                    android:id="@+id/imageiv"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/ivback"
+                    android:layout_marginLeft="56dp"
+                    android:src="@drawable/download" />
+
+                <TextView
+                    android:id="@+id/addressdata"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="@{user.address}" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.92">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/datetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@{user.date}" />
+
+                    <TextView
+                        android:id="@+id/bodytv"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datetv"
+                        android:layout_margin="5dp"
+                        android:maxLines="10"
+                        android:text="@{user.body}"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/timetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bodytv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

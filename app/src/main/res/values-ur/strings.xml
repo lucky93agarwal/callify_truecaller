@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Callify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="kaun_string">Callify</string>
+
+    <string name="get_started_string">شروع کرنے کے</string>
+
+
+    <string name="smart__string">اسمارٹ ،</string>
+
+    <string name="spam_free_dialer_string">اسپام فری ڈائلر</string>
+    <string name="and_sms_string">اور ایس ایم ایس</string>
+    <string name="truecaller__loved_by_250_million_users_string">Callify، تیزی سے بڑھتی ہوئی کالر ID</string>
+    <string name="by_clicking__get_started__if_you_reside_in_the_eu__eea_or_switzerland_you_accept_the_terms_of_service_and_if_you_reside_in_any_other_country_you_accept_the_terms_of_service_and_privacy_policy_string">شروعات کریں پر کلک کرکے اگر آپ ای یو ، ای ای اے یا سوئٹزرلینڈ میں رہتے ہیں تو آپ سروس کی شرائط کو قبول کرتے ہیں اور اگر آپ کسی دوسرے ملک میں رہتے ہیں تو آپ سروس کی شرائط اور رازداری کی پالیسی کو قبول کرتے ہیں۔</string>
+    <string name="change_language_to__string">زبان کو تبدیل کریں</string>
+    <string name="hindi"><u>हिन्दी</u>.</string>
+    <string name="more_string"><u>مزید</u>.</string>
+
+    <string name="get_started_ek1_string">شروع کرنے کے</string>
+    <string name="choose_language">زبان کا انتخاب کریں</string>
+
+
+    <string name="use_system_default">سسٹم ڈیفالٹ استعمال کریں</string>
+    <string name="change">بدلیں</string>
+    <string name="defaulttitle">ڈیفالٹ ڈائلنگ ایپ کے طور پر ٹریوکلر کو سیٹ کریں؟</string>
+    <string name="defaultdetail">ڈیفالٹ ڈائلر ایپ کو تبدیل کرنے سے کچھ کال کی ترتیبات غیر موزوں ہوجاتی ہیں ، اور فون کی استحکام اور مطابقت کو بھی متاثر کرسکتے ہیں۔ سسٹم کے ذریعہ فراہم کردہ ڈائلر ایپ کے استعمال کی سفارش کی جاتی ہے۔</string>
+
+
+    <string name="to_show_your">آپ کی کال کی سرگزشت ظاہر کرنے اور سپیم ایس ایم ایس کو بہتر بنانے کے لئے ، کون کو آپ کی کالز ، رابطوں اور ایس ایم ایس تک رسائی حاصل کرنا ہوگی۔</string>
+    <string name="security_note_kaun">(سیکیورٹی نوٹ: کون آپ کے فون بک میں رابطوں سے اپنے ڈیٹا کو ماخذ نہیں کرتا ہے)</string>
+
+    <string name="continuebtn">جاری رہے</string>
+
+
+    <string name="enter_phone_number">فون نمبر درج کریں</string>
+    <string name="select_your_country_and_enter_your_phone_number">اپنا ملک منتخب کریں اور اپنا فون نمبر درج کریں</string>
+
+
+    <string name="upgrade_to_premium">پریمیم میں اپ گریڈ کریں</string>
+    <string name="who_viewed_my_profile">جس نے میرا پروفائل دیکھا</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="manage_blocking">مسدود کرنے کا انتظام کریں</string>
+    <string name="discovery_new_friends">نئے دوست دریافت کریں</string>
+    <string name="invite_friends">دوستوں کو مدعو کریں</string>
+    <string name="dark_mode">ڈارک موڈ</string>
+    <string name="settings">ترتیبات</string>
+    <string name="send_feedback">رائے بھیجیں</string>
+    <string name="faq">عمومی سوالات</string>
+
+
+
+    <string name="change_default_sms_app">ڈیفالٹ SMS ایپ تبدیل کریں</string>
+    <string name="mark_all_as_read">سب کو پڑھا ہوا شمار کریں</string>
+    <string name="arcived_conversations">محفوظ شدہ گفتگو</string>
+
+
+
+    <string name="enter_your_fist_name">اپنے مٹھی کا نام درج کریں</string>
+    <string name="enter_your_last_name">اپنا آخری نام درج کریں</string>
+    <string name="enter_your_email">اپنا ای میل درج کریں</string>
+
+
+
+    <string name="home">گھر</string>
+    <string name="contact">رابطہ کریں</string>
+    <string name="premium">پریمیم</string>
+    <string name="chat">چیٹ</string>
+
+
+</resources>

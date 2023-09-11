@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_compose"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/new_message_"
+        app:showAsAction="always|never" />
+    <item
+        android:id="@+id/item_mark_all_read"
+        android:icon="@drawable/ic_action_done_all"
+        android:title="@string/mark_all_read_"
+        app:showAsAction="ifRoom|never" />
+    <item
+        android:id="@+id/item_delete_all_threads"
+        android:title="@string/delete_threads_"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+</menu>

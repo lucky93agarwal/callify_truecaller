@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/ic_arrow"
+        android:icon="@drawable/bottom_navigation_home"
+        android:title="@string/home"
+        />
+
+    <item
+        android:id="@+id/ic_android"
+        android:icon="@drawable/bottom_navigation_contact"
+        android:title="@string/contact"
+        />
+    <item
+        android:id="@+id/ic_books"
+        android:icon="@drawable/bottom_navigation_premium"
+        android:title="@string/premium"
+        />
+    <item
+        android:id="@+id/ic_center_focus"
+        android:icon="@drawable/bottom_navigation_chat"
+        android:title="@string/chat"
+        />
+
+
+
+
+
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+    <com.cjt2325.cameralibrary.JCameraView
+        android:id="@+id/jcameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:duration_max="30000"
+        app:iconMargin="20dp"
+        app:iconSize="30dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/galleryiconlucky"
+        android:outlineAmbientShadowColor="@color/white"/>
+</FrameLayout>

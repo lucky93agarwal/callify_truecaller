@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <Button
+        android:id="@+id/getdata"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Main Class"
+        android:textColor="#ffffff"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/datarecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/drawableback"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/defaulttitle"
+        android:textColor="#E4E4E9"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="@string/defaultdetail"
+        android:textColor="#E4E4E9"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/usesystembtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/use_system_default"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/buttonbg"
+        android:textColor="#322775"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changebtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/change"
+        android:fontFamily="@font/montserratbold"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonbg"
+        android:textColor="#322775"/>
+
+
+
+
+</LinearLayout>

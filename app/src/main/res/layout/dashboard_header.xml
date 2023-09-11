@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/drawableHeader"
+    android:layout_gravity=""
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp"
+    android:gravity="center_horizontal"
+    android:paddingRight="10dp"
+
+    android:weightSum="1">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/manicon"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="Lucky Agarwal"
+                android:textColor="@color/drawableText" />
+            <TextView
+                android:id="@+id/mobiletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="8840149029"
+                android:textColor="@color/drawableText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circlebackground"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/editiv"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/editicon"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvaddresstwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:text="DesiFlea"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:textSize="12dp"
+        android:gravity="center_vertical"
+        android:text="DesiFlea"
+        android:textColor="#000000" />
+
+
+</LinearLayout>

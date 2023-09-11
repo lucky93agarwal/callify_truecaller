@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gpslab.kaun">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <permission
+        android:name="de.ub0r.android.smsdroid.SAVE_TO_DB"
+        android:description="@string/permission_save_to_db_description"
+        android:label="@string/permission_save_to_db"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+
+    <application
+        android:name=".view.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logonew"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Truecaller"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity android:name=".internetcheck.InternetActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logonew" />
+
+        <activity android:name=".Notification.SpamUserDetialActivity" />
+        <activity android:name=".Contact.TestingContactActivity" />
+        <activity android:name=".faq.FAQActivity" />
+        <activity android:name=".feedback.FeedbackActivity" />
+        <activity android:name=".block.ManageBlockingActivity" />
+        <activity android:name=".upgrade_to_premium.UpgradePremiumSecActivity" />
+        <activity android:name=".Search.SearchCallLogMoreActivity" />
+        <activity android:name=".Search.SearchCallifyMoreActivity" />
+        <activity android:name=".Search.SearchMoreActivity" />
+        <activity android:name=".upgrade_to_premium.UpgradePremiumDetailsActivity" />
+        <activity android:name=".upgrade_to_premium.UpgradePremiumActivity" />
+        <activity android:name=".fragment.ImageReplayinActivity" />
+        <activity android:name=".calling.CameraNewActivity" />
+        <activity android:name=".calling.CallingActivity" />
+        <activity android:name=".calling.NewCallActivity" />
+        <activity android:name=".status.TextStatusActivity" />
+        <activity android:name=".status.MyStatusActivity" />
+        <activity android:name=".status.ImageEditActivity" />
+        <activity android:name=".Forward.ForwardActivity" />
+        <activity
+            android:name=".StartingPopupActivity"
+            android:noHistory="true"
+            android:theme="@style/CustomTheme" />
+        <activity android:name=".fullscreen.FullscreenActivity" />
+        <activity
+            android:name=".status.UpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".status.ViewStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contact.SearchContactActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".calling.CallingService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Contact.ContactListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mssagedetail.MessageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SelectContactNumbersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PlacesPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messages.MessagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.ProfileDialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".ProfileEdit.ProfileEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Details.ContactDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".check.CheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".privacyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notification.UserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SenderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sender_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateUnchanged|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MessageListActivity" />
+        <activity android:name=".activity.PreferencesActivity" />
+        <activity
+            android:name=".activity.ConversationListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.SMSdroid_Light"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name=".Receiver.SmsReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".download_notification.BackgroundNotificationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".download_notification.BackgroundNotificationImageGalleryService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".download_notification.BackgroundNotificationAudioSendService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".download_notification.BackgroundNotificationDocSendService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".download_notification.BackgroundNotificationVideoSendService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.BackgroundNotificationImageSToryService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Login.LoginSecActivity"></activity>
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".OTP.OTPActivity" />
+        <activity android:name=".Phone.PhoneActivity" />
+        <activity android:name=".language.LanguageActivity" />
+        <activity android:name=".Splash.SplashActivity">
+
+        </activity>
+        <activity android:name=".testing.TestingActivity"></activity>
+        <activity
+            android:name=".MainHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Truecaller"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Home.HomeActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity
+            android:name=".MyCustomDialog"
+            android:noHistory="true"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name=".IncomingCallActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="r5oVXgaaSqnhWtqsuMMc" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="Pv-_XkZ7CsE9EJn5W1Ahcg" />
+
+        <service
+            android:name=".Service.GetContactsService"
+            android:exported="true" />
+
+        <receiver
+            android:name=".CallReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:priority="1000">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ExitActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <service
+            android:name=".Service.MqttMessageService"
+            android:label="Messaging Service" />
+        <service
+            android:name=".MyBrodcastRecieverService"
+            android:exported="true" />
+        <service
+            android:name=".Service.CallLogService"
+            android:exported="true" />
+        <service
+            android:name=".Service.GetMessageServices"
+            android:exported="true" />
+        <service
+            android:name=".Service.SocketServiceProvider"
+            android:exported="true" />
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".PhoneStateListener"
+            android:enabled="true"
+            android:exported="true"
+            android:priority="1000">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing" />
+    </application>
+
+</manifest>

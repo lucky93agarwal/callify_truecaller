@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearhide"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="20dp"
+        android:weightSum="1"
+        android:background="@drawable/rowbackgroundraw">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_weight="0.4">
+
+            <TextView
+                android:id="@+id/counttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="11 unread"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#908F9D"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="conversations"
+                android:layout_gravity="bottom"
+
+                android:textSize="12dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#908F9D"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/showtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:text="SHOW"
+                android:textColor="#007AFF"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.4">
+            <TextView
+                android:id="@+id/hidetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARK AS READ"
+                android:textSize="12dp"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="#007AFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/progressbarone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="800">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+            <include layout="@layout/message_placeholder_layout" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</LinearLayout>

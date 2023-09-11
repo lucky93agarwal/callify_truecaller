@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Callify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="kaun_string">Callify</string>
+
+    <string name="get_started_string">शुरू हो जाओ</string>
+
+
+    <string name="smart__string">होशियार,</string>
+
+    <string name="spam_free_dialer_string">स्पैम-मुक्त डायलर</string>
+    <string name="and_sms_string">और एसएमएस</string>
+    <string name="truecaller__loved_by_250_million_users_string">Callify, सबसे तेजी से बढ़ती कॉलर आईडीा</string>
+    <string name="by_clicking__get_started__if_you_reside_in_the_eu__eea_or_switzerland_you_accept_the_terms_of_service_and_if_you_reside_in_any_other_country_you_accept_the_terms_of_service_and_privacy_policy_string">यदि आप यूरोपीय संघ, ईईए या स्विटजरलैंड में रहते हैं, तो आप सेवा की शर्तों को स्वीकार करते हैं और यदि आप किसी अन्य देश में रहते हैं तो सेवा और गोपनीयता नीति स्वीकार करते हैं।</string>
+    <string name="change_language_to__string">को भाषा बदलें</string>
+    <string name="hindi"><u>हिन्दी</u>.</string>
+    <string name="more_string"><u>अधिक</u>.</string>
+
+    <string name="get_started_ek1_string">शुरू हो जाओ</string>
+    <string name="choose_language">भाषा चुनें</string>
+
+
+
+    <string name="use_system_default">सिस्टम डिफ़ॉल्ट का उपयोग करें</string>
+    <string name="change">परिवर्तन</string>
+    <string name="defaulttitle">Truecaller को डिफ़ॉल्ट डायलिंग ऐप के रूप में सेट करें?</string>
+    <string name="defaultdetail">डिफ़ॉल्ट डायलर ऐप को बदलने से कुछ कॉल सेटिंग अमान्य हो सकती हैं, और इससे फ़ोन की स्थिरता और संगतता भी प्रभावित हो सकती है। सिस्टम द्वारा प्रदान किए गए डायलर ऐप का उपयोग करने की सिफारिश की जाती है।</string>
+
+
+
+    <string name="to_show_your">अपने कॉल इतिहास को दिखाने के लिए और स्पैम एसएमएस को मिटाने के लिए, kaun को आपके कॉल, संपर्क और एसएमएस की जरूरत है।</string>
+    <string name="security_note_kaun">(सिक्योरिटी नोट: Kaun आपके फोनबुक में मौजूद कॉन्टैक्ट्स से इसका डेटा नहीं लेती)</string>
+
+    <string name="continuebtn">जारी रखें</string>
+
+
+    <string name="enter_phone_number">फोन नंबर दर्ज</string>
+    <string name="select_your_country_and_enter_your_phone_number">अपना देश चुनें और अपना फ़ोन नंबर डालें</string>
+
+
+    <string name="upgrade_to_premium">प्रीमियम में अपग्रेड करें</string>
+    <string name="who_viewed_my_profile">मेरी प्रोफाइल किसने देखी</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="manage_blocking">ब्लॉकिंग का प्रबंधन करें</string>
+    <string name="discovery_new_friends">नए दोस्तों की खोज</string>
+    <string name="invite_friends">मित्रों को आमंत्रित करें</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="settings">समायोजन</string>
+    <string name="send_feedback">प्रतिक्रिया भेजें</string>
+    <string name="faq">सामान्य प्रश्न</string>
+
+
+
+
+    <string name="change_default_sms_app">डिफ़ॉल्ट एसएमएस ऐप बदलें</string>
+    <string name="mark_all_as_read">सभी को पढ़ा हुआ मार्क करें</string>
+    <string name="arcived_conversations">संग्रहीत वार्तालाप</string>
+
+
+    <string name="enter_your_fist_name">अपना मुट्ठी नाम दर्ज करें</string>
+    <string name="enter_your_last_name">अपना अंतिम नाम दर्ज करें</string>
+    <string name="enter_your_email">अपना ईमेल दर्ज करें</string>
+
+
+
+    <string name="home">घर</string>
+    <string name="contact">संपर्क करें</string>
+    <string name="premium">प्रीमियम</string>
+    <string name="chat">चैट</string>
+
+
+</resources>

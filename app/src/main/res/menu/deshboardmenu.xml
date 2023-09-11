@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:id="@+id/group0" android:checkableBehavior="single"/>
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/crown"
+            android:title="@string/upgrade_to_premium" />
+
+        <item
+            android:id="@+id/menu_hubdetails"
+            android:icon="@drawable/eye"
+            android:title="@string/who_viewed_my_profile" />
+
+
+
+        <item
+            android:id="@+id/menu_share"
+            android:visible="false"
+            android:icon="@drawable/notification"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/menu_run_sheet"
+            android:title="@string/manage_blocking" />
+
+
+        <item
+            android:id="@+id/menu_contact_us"
+            android:icon="@drawable/glob"
+            android:visible="false"
+            android:title="@string/discovery_new_friends" />
+        <item
+            android:id="@+id/menu_invite_friends"
+            android:icon="@drawable/msg"
+            android:visible="false"
+            android:title="@string/invite_friends" />
+
+    </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+
+
+    <item
+        android:id="@+id/menu_dark_mode"
+        android:visible="false"
+        android:title="@string/dark_mode" />
+
+    <item
+
+        android:id="@+id/menu_settings"
+        android:visible="false"
+        android:title="@string/settings" />
+
+    <item
+
+        android:id="@+id/menu_run_send_feedback"
+        android:title="@string/send_feedback" />
+
+
+    <item
+
+        android:id="@+id/menu_faq"
+        android:title="@string/faq" />
+        <item
+
+            android:id="@+id/menu_logout"
+            android:title="Logout" />
+
+    </group>
+</menu>

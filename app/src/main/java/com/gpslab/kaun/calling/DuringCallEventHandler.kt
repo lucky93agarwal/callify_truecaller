@@ -1,0 +1,9 @@
+package com.gpslab.kaun.calling
+
+interface DuringCallEventHandler : AGEventHandler {
+    fun onUserJoined(uid: Int)
+    fun onDecodingRemoteVideo(uid: Int,  elapsed: Int)
+    fun onJoinChannelSuccess(channel: String?, uid: Int, elapsed: Int)
+    fun onUserOffline(uid: Int, reason: Int)
+    fun onExtraCallback(type: Int,  data: Array<Any?>)
+}
